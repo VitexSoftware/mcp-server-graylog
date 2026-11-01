@@ -1,2 +1,3 @@
 debian/io.github.vitexus.mcp_server_graylog.metainfo.xml usr/share/metainfo/
 debian/server.json usr/share/mcp-server-graylog/
+mcp-server-graylog.svg usr/share/icons/hicolor/scalable/apps/

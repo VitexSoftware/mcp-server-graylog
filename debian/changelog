@@ -1,3 +1,9 @@
+mcp-server-graylog (1.1.0-2) unstable; urgency=low
+
+  * Install mcp-server-graylog.svg as the AppStream stock icon.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Sun, 01 Nov 2026 10:40:00 +0100
+
 mcp-server-graylog (1.1.0-1) unstable; urgency=low
 
   * Add GRAYLOG_MODE=api: read-only REST tools for system, streams, search and fields.

@@ -12,6 +12,7 @@
       streams over the REST API.
     </p>
   </description>
+  <icon type="stock">mcp-server-graylog</icon>
   <provides>
     <binary>mcp-server-graylog</binary>
   </provides>
