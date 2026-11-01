@@ -1,0 +1,55 @@
+{
+  "environmentVariables": [
+    {
+      "name": "GRAYLOG_MODE",
+      "description": "bridge forwards to Graylog 7.1+ /api/mcp. api exposes the read-only REST tools (search, streams, fields).",
+      "isRequired": false,
+      "isSecret": false,
+      "default": "bridge",
+      "choices": ["bridge", "api"]
+    },
+    {
+      "name": "GRAYLOG_URL",
+      "description": "Graylog base URL. A trailing /api is accepted and stripped.",
+      "isRequired": false,
+      "isSecret": false,
+      "default": "http://127.0.0.1:9000"
+    },
+    {
+      "name": "GRAYLOG_API_TOKEN",
+      "description": "Graylog API token. The server builds Basic auth as base64(token:token). GRAYLOG_TOKEN is accepted as an alias.",
+      "isRequired": true,
+      "isSecret": true
+    },
+    {
+      "name": "GRAYLOG_READ_ONLY",
+      "description": "In bridge mode, hide tools that are not read-only. API mode is always read-only.",
+      "isRequired": false,
+      "isSecret": false,
+      "default": "true",
+      "choices": ["true", "false"]
+    },
+    {
+      "name": "GRAYLOG_TIMEOUT",
+      "description": "Seconds to wait for one Graylog request.",
+      "isRequired": false,
+      "isSecret": false,
+      "default": "30"
+    },
+    {
+      "name": "GRAYLOG_VERIFY_TLS",
+      "description": "Verify the Graylog TLS certificate.",
+      "isRequired": false,
+      "isSecret": false,
+      "default": "true",
+      "choices": ["true", "false"]
+    },
+    {
+      "name": "GRAYLOG_MAX_CHARS",
+      "description": "Truncate tool output longer than this many characters.",
+      "isRequired": false,
+      "isSecret": false,
+      "default": "100000"
+    }
+  ]
+}

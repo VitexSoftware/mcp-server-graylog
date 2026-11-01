@@ -1,6 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: mcp-server-graylog
-Source: https://github.com/Vitexus/mcp-server-graylog
+Source: https://github.com/VitexSoftware/mcp-server-graylog
+Comment: API-mode tools follow the Connectica Graylog MCP created by Ing. Radek Vymazal. The HTTP client is original; the private connectica-mcp-common library is not included.
 
 Files: *
 Copyright: 2026 Vítězslav Dvořák <info@vitexsoftware.cz>

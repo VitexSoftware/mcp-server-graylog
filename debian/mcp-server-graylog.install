@@ -1,0 +1,2 @@
+debian/io.github.vitexus.mcp_server_graylog.metainfo.xml usr/share/metainfo/
+debian/server.json usr/share/mcp-server-graylog/

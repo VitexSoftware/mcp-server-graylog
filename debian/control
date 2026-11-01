@@ -4,9 +4,9 @@ Priority: optional
 Maintainer: "Vítězslav Dvořák" <info@vitexsoftware.cz>
 Build-Depends: debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-setuptools
 Standards-Version: 4.6.2
-Homepage: https://github.com/Vitexus/mcp-server-graylog
-Vcs-Git: https://github.com/Vitexus/mcp-server-graylog.git
-Vcs-Browser: https://github.com/Vitexus/mcp-server-graylog
+Homepage: https://github.com/VitexSoftware/mcp-server-graylog
+Vcs-Git: https://github.com/VitexSoftware/mcp-server-graylog.git
+Vcs-Browser: https://github.com/VitexSoftware/mcp-server-graylog
 
 Package: mcp-server-graylog
 Architecture: all
@@ -14,11 +14,11 @@ Depends: ${misc:Depends}, ${python3:Depends},
  python3-mcp (>= 1:2.0.0),
  python3-mcp-types,
  python3-fastmcp (>= 4.0.0~b1),
-Description: stdio MCP bridge to the MCP endpoint built into Graylog 7.1+
- Model Context Protocol (MCP) server that forwards to the experimental
- /api/mcp endpoint of a Graylog server. It builds the required Basic
- authentication header from GRAYLOG_API_TOKEN, runs read-only by default
- and exposes whatever tools the connected Graylog offers.
+Description: stdio MCP server for Graylog
+ Model Context Protocol (MCP) server for Graylog. Bridge mode forwards to
+ the experimental /api/mcp endpoint of Graylog 7.1+. API mode calls the
+ REST API with a fixed set of read-only tools (system, streams, search,
+ fields). Authentication is Basic, built from GRAYLOG_API_TOKEN.
 
 Package: mcprack-mcp-server-graylog
 Architecture: all

@@ -1,3 +1,11 @@
+mcp-server-graylog (1.1.0-1) unstable; urgency=low
+
+  * Add GRAYLOG_MODE=api: read-only REST tools for system, streams, search and fields.
+    The tool list follows the Connectica Graylog MCP created by Ing. Radek Vymazal.
+  * Ship server.json and AppStream metainfo.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Sun, 01 Nov 2026 09:00:00 +0100
+
 mcp-server-graylog (1.0.0-1) unstable; urgency=low
 
   * Initial release: stdio bridge to the Graylog 7.1+ built-in MCP endpoint.

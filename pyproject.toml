@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mcp-server-graylog"
-version = "1.0.0"
-description = "stdio bridge to the MCP endpoint built into Graylog 7.1+"
+version = "1.1.0"
+description = "stdio MCP server for Graylog: built-in MCP bridge or read-only REST tools"
 authors = [{ name = "CyberVitexus", email = "info@vitexsoftware.cz" }]
 readme = "README.md"
 license = "MIT"
