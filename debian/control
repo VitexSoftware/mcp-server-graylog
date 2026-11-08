@@ -23,7 +23,7 @@ Description: stdio MCP server for Graylog
 Package: mcprack-mcp-server-graylog
 Architecture: all
 Depends: ${misc:Depends},
- mcprack (>= 1.5.4),
+ mcprack (>= 1.6.0),
  mcp-server-graylog (= ${binary:Version}),
 Description: Registers Graylog MCP server into mcprack catalog
  Companion package for mcp-server-graylog. Installing it registers
