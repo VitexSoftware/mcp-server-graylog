@@ -2,5 +2,11 @@
 set -e
 mcp-server-graylog --version
 cd "${AUTOPKGTEST_TMP:-/tmp}"
-cp -r "${AUTOPKGTEST_ARTIFACTS:-$OLDPWD}/tests" . 2>/dev/null || cp -r "$OLDPWD/tests" .
+SRC="${AUTOPKGTEST_ARTIFACTS:-$OLDPWD}"
+cp -r "$SRC/tests" . 2>/dev/null || cp -r "$OLDPWD/tests" .
+# tests that assert README/server.json consistency resolve the repo root from
+# __file__, so README.md and debian/server.json must sit next to tests/
+cp "$SRC/README.md" . 2>/dev/null || cp "$OLDPWD/README.md" . 2>/dev/null || true
+mkdir -p debian
+cp "$SRC/debian/server.json" debian/ 2>/dev/null || cp "$OLDPWD/debian/server.json" debian/ 2>/dev/null || true
 python3 -m pytest -q -p no:cacheprovider tests
