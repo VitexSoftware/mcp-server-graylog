@@ -1,3 +1,10 @@
+mcp-server-graylog (1.1.0-4) unstable; urgency=medium
+
+  * Raise python3-fastmcp floor to (>= 4.1.4); testing repo now ships
+    4.2.0~a3 (4.0.10 crashes on import, aiofile).
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Wed, 11 Nov 2026 13:00:42 +0100
+
 mcp-server-graylog (1.1.0-3) unstable; urgency=low
 
   * Depend on python3-fastmcp (>= 4.0.10). The testing repository publishes
